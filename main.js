@@ -50,18 +50,18 @@
 
 //Lambda Llama
 const llamaNamer = function () {
-    const possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"]
-    const randomizer = Math.floor(Math.random() * 7)
+    const possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"];
+    let randomizer = Math.floor(Math.random() * 7);
+    const suffix = " the Llama"
 
-    const namer = function () {
-        const suffix = " the Llama"
-        const name = possibleNames[randomizer]
+    let name = function () {
+        let names = possibleNames[randomizer]
+        return names
     }
-
-    return name + suffix
+    return name() + suffix;
 }
 
-nameMaker = llamaNamer()
-console.log(nameMaker())
+nameMaker = llamaNamer();
+console.log(nameMaker)
 
 
