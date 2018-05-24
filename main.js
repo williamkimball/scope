@@ -14,19 +14,38 @@
 // conjunction("Master", "Card")
 
 
-    const ModSquad = {
-        "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
-        "series": {
-            "start": "1968",
-            "end": "1973"
-        }
-    };
+//     const ModSquad = {
+//         "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+//         "series": {
+//             "start": "1968",
+//             "end": "1973"
+//         }
+//     };
 
-    let HTMLRepresentation = `<h1>The Mod Squad</h1>`
+//     let HTMLRepresentation = `<h1>The Mod Squad</h1>`
 
-    ModSquad.members.forEach(member => {
-        HTMLRepresentation += `<div>${member}</div>`;
-    })
+//     ModSquad.members.forEach(member => {
+//         HTMLRepresentation += `<div>${member}</div>`;
+//     })
 
 
-document.querySelector(".show-info").innerHTML = HTMLRepresentation
+// document.querySelector(".show-info").innerHTML = HTMLRepresentation
+
+const locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
+
+for (let k = 0; k < locations.length; k++) {
+    let currentLocation = locations[k];
+
+    if (currentLocation > 2) {
+        let invalidLocation = true
+        if (invalidLocation) {
+            k++;
+            console.log("This location is invalid")
+            
+        } 
+    }
+    // } console.log(`There were ${k} locations displayed`)
+    
+
+}
+
